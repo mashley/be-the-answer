@@ -2,6 +2,8 @@
 
 Materials for the **Be the Answer** workshop — slides, handouts, prompts, skills, and MCP server references. Everything here is public: clone it, copy it, remix it.
 
+> ### 👉 New here? **[Start Here](handouts/start-here.md)** — the 5-minute recap + everything you need to be the answer, free.
+
 ## 📊 Slides
 
 The presentation lives in [`slides/`](slides/) and is built with [reveal.js](https://revealjs.com/).
