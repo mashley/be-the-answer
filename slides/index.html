@@ -31,12 +31,18 @@
     .reveal .links b { color: var(--brand); font-weight: 700; }
     .reveal .qr { background: #fff; padding: 14px; border-radius: 12px; display: inline-block; margin-top: 0.6em; }
     .reveal .qr img { display: block; width: 210px; height: 210px; }
+    .fs-btn { position: fixed; top: 14px; right: 16px; z-index: 60; font-family: "DM Sans", system-ui, sans-serif;
+      background: rgba(255,255,255,0.12); color: #fff; border: 1px solid rgba(255,255,255,0.28);
+      border-radius: 8px; padding: 8px 14px; font-size: 14px; cursor: pointer; transition: background 0.15s; }
+    .fs-btn:hover { background: var(--brand); border-color: var(--brand); }
     .reveal .link { color: var(--brand); font-weight: 800; font-size: 1.1em; word-break: break-all; }
     .reveal .dim { color: var(--muted); }
     .reveal section { text-align: center; }
   </style>
 </head>
 <body>
+  <button class="fs-btn" id="fsBtn" title="Toggle fullscreen (or press F)">⤢ Fullscreen</button>
+
   <div class="reveal">
     <div class="slides">
 
@@ -235,6 +241,19 @@
       transition: 'fade',
       controls: true,
       plugins: [ RevealNotes ]
+    });
+
+    // Fullscreen button
+    const fsBtn = document.getElementById('fsBtn');
+    fsBtn.addEventListener('click', () => {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen();
+      } else {
+        document.exitFullscreen();
+      }
+    });
+    document.addEventListener('fullscreenchange', () => {
+      fsBtn.textContent = document.fullscreenElement ? '⤢ Exit fullscreen' : '⤢ Fullscreen';
     });
   </script>
 </body>
