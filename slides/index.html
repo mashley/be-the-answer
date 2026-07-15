@@ -35,6 +35,9 @@
       background: rgba(255,255,255,0.12); color: #fff; border: 1px solid rgba(255,255,255,0.28);
       border-radius: 8px; padding: 8px 14px; font-size: 14px; cursor: pointer; transition: background 0.15s; }
     .fs-btn:hover { background: var(--brand); border-color: var(--brand); }
+    /* Clean screen while presenting: hide the button + nav arrows in fullscreen */
+    body.is-fs .fs-btn,
+    body.is-fs .reveal .controls { display: none !important; }
     .reveal .link { color: var(--brand); font-weight: 800; font-size: 1.1em; word-break: break-all; }
     .reveal .dim { color: var(--muted); }
     .reveal section { text-align: center; }
@@ -253,7 +256,9 @@
       }
     });
     document.addEventListener('fullscreenchange', () => {
-      fsBtn.textContent = document.fullscreenElement ? '⤢ Exit fullscreen' : '⤢ Fullscreen';
+      const full = !!document.fullscreenElement;
+      document.body.classList.toggle('is-fs', full);
+      fsBtn.textContent = full ? '⤢ Exit fullscreen' : '⤢ Fullscreen';
     });
   </script>
 </body>
