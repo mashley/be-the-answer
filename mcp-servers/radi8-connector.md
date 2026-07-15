@@ -20,29 +20,21 @@ schedule, right from a normal Claude chat (even on your phone). Once it's set up
 ## Steps
 
 **1. Get your connector link from Radi8.**
-In Radi8, find the **Connect Claude** button and copy the connector URL it shows you.
+In Radi8, open **My Settings → Connect Claude** and copy the server URL:
 
-![Radi8 Connect Claude button](../assets/radi8-connect-claude.png)
+```
+https://app.radi8.com/api/mcp
+```
 
-> Radi8 connector URL (paste yours, or use the one from the button):
-> `PASTE-YOUR-RADI8-CONNECT-URL-HERE`
+**2. Add it in Claude.**
+In [claude.ai](https://claude.ai), go to **Settings → Integrations → Add Integration**. Paste the URL
+above, give it a name (e.g. "Radi8"), and add it.
 
-**2. Open Claude's connectors.**
-In [claude.ai](https://claude.ai): **Settings → Connectors** (or the toolbox icon → Connectors). Click
-**Add custom connector** (the **+** button).
+**3. Authorize.**
+Claude redirects you back to Radi8 to sign in and approve the connection. Approve it — Radi8's tools are
+now available to Claude. (You can revoke the connection from Radi8's Connect Claude page any time.)
 
-![Claude add custom connector](../assets/claude-connectors-add.png)
-
-**3. Paste the Radi8 link and add it.**
-Paste the URL from step 1, give it a name (e.g. "Radi8"), and add it.
-
-**4. Authorize.**
-Claude will ask you to sign in / allow access to Radi8. Approve it. Done — Radi8's tools are now available
-to Claude.
-
-![Authorize the connector](../assets/claude-connector-authorize.png)
-
-**5. Try it.**
+**4. Try it.**
 Start a new chat and type:
 ```
 What do you know about my brand from Radi8?

@@ -1,19 +1,16 @@
-# Assets — drop screenshots here
+# Assets
 
-Screenshots used by the handout, the connector walkthrough, and the slides. Save them here with these
-**exact filenames** so they appear automatically. PNG or JPG both fine.
+Images used by the slides and docs. PNG or JPG both fine.
 
-| Filename | What it should show | Used by |
+## In use
+| Filename | Shows | Used by |
 |---|---|---|
-| `radi8-connect-claude.png` | Radi8's **Connect Claude** button + the connector URL | connector walkthrough |
-| `claude-connectors-add.png` | Claude → Settings → Connectors → **Add custom connector** (+) | connector walkthrough |
-| `claude-connector-authorize.png` | The authorize / allow-access screen after pasting the URL | connector walkthrough |
-| `radi8-ai-visibility.png` | The **AI Visibility** screen (your rank vs. competitors + recommendations) | handout, slide 9 |
-| `ai-recommends-competitors.png` | An AI chat answering "who's the best…" and naming competitors, not you | slide 8 |
+| `ai-recommend.png` | Radi8's "We Asked AI to Recommend Us. It Didn't." card | slide 8 (AEO hook) |
+| `ai-visibility.png` | Radi8 AI Visibility — score, top competitor, prompt results | slide 9 (AEO tool) |
 
-> Optional extras (nice to have): `radi8-brand-guide.png` (the brand guide / context screen),
-> `radi8-calendar.png` (scheduled posts calendar).
+## Optional to add later
+Drop a file here with a clear name and tell me where to wire it in. Good candidates: the customer-journey
+"6 systems" screen (journey slide), the content calendar (the "engine runs" beat), the Reports metrics.
 
-Once you add a file, the image link that references it lights up automatically — no code changes needed.
-For the **slides**, tell me the filename and I'll wire it into slides 8 and 9 (they're placeholder boxes
-right now).
+> Kept intentionally **out** of the public repo: any screen showing account internals (API keys, full
+> brand/ICP/strategy text). Those stay in the private `local/` folder.
