@@ -6,7 +6,7 @@ Materials for the **Be the Answer** workshop — slides, handouts, prompts, skil
 
 The presentation lives in [`slides/`](slides/) and is built with [reveal.js](https://revealjs.com/).
 
-- **Present live:** open the [published slides](#) fullscreen on a laptop or iPad _(URL appears once GitHub Pages is enabled — see below)._
+- **Present live:** open the [published slides](https://mashley.github.io/be-the-answer/) fullscreen on a laptop or iPad.
 - **Present locally:** open `slides/index.html` in any browser and press `F` for fullscreen.
 - **Navigate:** arrow keys or swipe. Press `S` for speaker notes, `Esc` for the slide overview.
 
