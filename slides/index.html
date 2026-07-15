@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Be the Answer</title>
+
+  <!-- reveal.js core + theme (CDN) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css" id="theme">
+  <!-- code highlighting -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/monokai.css">
+
+  <style>
+    /* ── Light-touch brand tweaks. Edit freely. ───────────── */
+    :root {
+      --brand: #4fd1c5;      /* accent color */
+      --brand-dark: #234e52;
+    }
+    .reveal h1, .reveal h2, .reveal h3 { letter-spacing: -0.01em; }
+    .reveal .accent { color: var(--brand); }
+    .reveal section.title-slide h1 { font-size: 2.4em; }
+    .reveal .subtitle { color: #9fb3c8; font-size: 0.7em; margin-top: 0.5em; }
+    .reveal .footer { position: fixed; bottom: 12px; right: 18px; font-size: 0.5em; color: #6b7c93; }
+    .reveal ul { line-height: 1.5; }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- ── TITLE ─────────────────────────────────────────── -->
+      <section class="title-slide" data-background-gradient="linear-gradient(120deg, #0f2027, #203a43, #2c5364)">
+        <h1>Be the <span class="accent">Answer</span></h1>
+        <p class="subtitle">A hands-on workshop &middot; Michael Ashley</p>
+      </section>
+
+      <!-- ── WHAT THIS IS ──────────────────────────────────── -->
+      <section>
+        <h2>What we'll do today</h2>
+        <ul>
+          <li class="fragment">Frame the idea: <span class="accent">be the answer</span></li>
+          <li class="fragment">Work through live examples together</li>
+          <li class="fragment">You leave with prompts, skills &amp; handouts you can reuse</li>
+        </ul>
+        <p class="subtitle fragment">Everything is on GitHub — clone it, keep it.</p>
+      </section>
+
+      <!-- ── SECTION DIVIDER (example) ─────────────────────── -->
+      <section data-background-color="#234e52">
+        <h2>Part 1 — <span class="accent">The Idea</span></h2>
+      </section>
+
+      <!-- ── A CONTENT SLIDE + SPEAKER NOTES ───────────────── -->
+      <section>
+        <h3>A point worth making</h3>
+        <ul>
+          <li>Say it plainly</li>
+          <li>Show, don't tell</li>
+          <li>Give them something to take home</li>
+        </ul>
+        <aside class="notes">
+          Speaker notes go here — press <strong>S</strong> during the talk to see them
+          on a second screen. The audience never sees this.
+        </aside>
+      </section>
+
+      <!-- ── A CODE / PROMPT SLIDE ─────────────────────────── -->
+      <section>
+        <h3>Showing a prompt</h3>
+        <pre><code data-trim data-noescape class="language-markdown">
+You are the answer, not the search result.
+
+Given a question, respond with the single
+best next action — then take it.
+        </code></pre>
+      </section>
+
+      <!-- ── VERTICAL STACK (press down-arrow) ─────────────── -->
+      <section>
+        <section>
+          <h3>Nested slides</h3>
+          <p class="subtitle">Press <strong>↓</strong> to go deeper on a topic, <strong>→</strong> to move on.</p>
+        </section>
+        <section>
+          <h3>A sub-point</h3>
+          <p>Use these for optional depth you can skip if you're short on time.</p>
+        </section>
+      </section>
+
+      <!-- ── CLOSING ───────────────────────────────────────── -->
+      <section data-background-gradient="linear-gradient(120deg, #0f2027, #203a43, #2c5364)">
+        <h2>Take it with you</h2>
+        <p class="subtitle">Slides, handouts, prompts &amp; skills:</p>
+        <p><a href="../" class="accent">github.com/&lt;you&gt;/be-the-answer</a></p>
+      </section>
+
+    </div>
+  </div>
+
+  <div class="footer">Be the Answer &middot; press <strong>F</strong> for fullscreen</div>
+
+  <!-- reveal.js core + plugins (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/highlight.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/markdown/markdown.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,          // deep-links to the current slide (good for sharing)
+      slideNumber: 'c/t',  // "current / total" in the corner
+      transition: 'slide',
+      plugins: [ RevealNotes, RevealHighlight, RevealMarkdown ]
+    });
+  </script>
+</body>
+</html>

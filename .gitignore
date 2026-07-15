@@ -1,0 +1,20 @@
+# ── Personal / local-only ──────────────────────────────
+# Anything in local/ stays on your machine and never pushes.
+local/
+
+# Claude Code personal settings (permissions, etc.)
+.claude/settings.local.json
+
+# ── OS / editor cruft ──────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
+
+# ── Common junk ────────────────────────────────────────
+node_modules/
+*.log
+.env
+.env.*

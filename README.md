@@ -1,0 +1,36 @@
+# Be the Answer
+
+Materials for the **Be the Answer** workshop — slides, handouts, prompts, skills, and MCP server references. Everything here is public: clone it, copy it, remix it.
+
+## 📊 Slides
+
+The presentation lives in [`slides/`](slides/) and is built with [reveal.js](https://revealjs.com/).
+
+- **Present live:** open the [published slides](#) fullscreen on a laptop or iPad _(URL appears once GitHub Pages is enabled — see below)._
+- **Present locally:** open `slides/index.html` in any browser and press `F` for fullscreen.
+- **Navigate:** arrow keys or swipe. Press `S` for speaker notes, `Esc` for the slide overview.
+
+## 📁 What's in here
+
+| Folder | What it holds |
+|---|---|
+| [`slides/`](slides/) | The reveal.js presentation |
+| [`handouts/`](handouts/) | One Markdown file per teachable moment — take-home, ready to recreate |
+| [`prompts/`](prompts/) | Reusable prompts demoed in the workshop |
+| [`skills/`](skills/) | Claude skills shown in the workshop |
+| [`mcp-servers/`](mcp-servers/) | Notes and links for the MCP servers referenced |
+| [`resources.md`](resources.md) | Curated links |
+| `local/` | **Not in the repo** — personal, machine-only notes (gitignored) |
+
+## 🌐 Enable the live slides (one-time setup)
+
+1. Push this repo to GitHub.
+2. Repo **Settings → Pages → Build and deployment → Source: Deploy from a branch**.
+3. Branch: **main**, folder: **/ (root)**. Save.
+4. After a minute, your slides are live at `https://<your-username>.github.io/<repo-name>/`.
+
+The root of the site redirects to the deck automatically.
+
+## 📄 License
+
+Licensed under [CC BY 4.0](LICENSE) — use anything here freely, just credit Michael Ashley.
