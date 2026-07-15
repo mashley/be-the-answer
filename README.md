@@ -33,6 +33,16 @@ The presentation lives in [`slides/`](slides/) and is built with [reveal.js](htt
 
 The root of the site redirects to the deck automatically.
 
+## 👤 About Michael
+
+<img src="assets/mash-headshot.jpg" alt="Michael &quot;Mash&quot; Ashley" width="140" align="left" style="border-radius:50%; margin-right:16px">
+
+**Michael "Mash" Ashley** — founder, advisor, and educator. He built and sold **FastPencil** (the first online self-publishing platform, before the Kindle), and has since been a trusted advisor inside three more exits — a private-equity sale, an acquisition by F5, and an IPO. He's an adjunct professor at San José State University, host of the **Inspiring Founders** peer groups, and founder & CEO of **Radi8**.
+
+🌐 [mashley.com](https://mashley.com) · [inspiringfounders.com](https://inspiringfounders.com) · [radi8.com](https://radi8.com) · [LinkedIn](https://www.linkedin.com/in/mashley/)
+
+<br clear="all">
+
 ## 📄 License
 
 Licensed under [CC BY 4.0](LICENSE) — use anything here freely, just credit Michael Ashley.

@@ -65,7 +65,8 @@ you works without it.*
 
 ## 4. Keep going
 - 🎥 The slides from today: [live here](https://mashley.github.io/be-the-answer/slides/)
-- 💬 Connect with me on LinkedIn (search **Michael Ashley "Mash"**)
+- 💬 Connect with me on [LinkedIn](https://www.linkedin.com/in/mashley/)
+- 🌐 [mashley.com](https://mashley.com) · [inspiringfounders.com](https://inspiringfounders.com) · [radi8.com](https://radi8.com)
 - ⭐ This whole repo is free under CC BY 4.0 — clone it, copy it, teach it.
 
 **Now go build something the world needs — and go be the answer.** 🚀
