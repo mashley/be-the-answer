@@ -2,116 +2,228 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Be the Answer</title>
 
-  <!-- reveal.js core + theme (CDN) -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css" id="theme">
-  <!-- code highlighting -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/monokai.css">
 
   <style>
-    /* ── Light-touch brand tweaks. Edit freely. ───────────── */
-    :root {
-      --brand: #4fd1c5;      /* accent color */
-      --brand-dark: #234e52;
-    }
-    .reveal h1, .reveal h2, .reveal h3 { letter-spacing: -0.01em; }
-    .reveal .accent { color: var(--brand); }
-    .reveal section.title-slide h1 { font-size: 2.4em; }
-    .reveal .subtitle { color: #9fb3c8; font-size: 0.7em; margin-top: 0.5em; }
-    .reveal .footer { position: fixed; bottom: 12px; right: 18px; font-size: 0.5em; color: #6b7c93; }
-    .reveal ul { line-height: 1.5; }
+    :root { --brand: #ff7a1a; --ink: #f4f6fb; --muted: #9fb3c8; }
+    .reveal { font-family: "DM Sans", system-ui, -apple-system, sans-serif; }
+    .reveal h1, .reveal h2, .reveal h3 { letter-spacing: -0.02em; font-weight: 300; line-height: 1.05; }
+    .reveal strong, .reveal .accent { color: var(--brand); font-weight: 800; }
+    .reveal .huge { font-size: 2.2em; font-weight: 800; letter-spacing: -0.03em; }
+    .reveal .eyebrow { color: var(--muted); text-transform: uppercase; letter-spacing: 0.18em;
+      font-size: 0.5em; font-weight: 700; margin-bottom: 0.6em; }
+    .reveal .oneline { font-size: 1.5em; font-weight: 300; line-height: 1.25; }
+    .reveal .stages { display: flex; justify-content: center; gap: 0.5em; flex-wrap: wrap; margin-top: .3em; }
+    .reveal .stage { font-weight: 800; font-size: 0.9em; }
+    .reveal .arrow { color: var(--muted); font-weight: 300; }
+    .reveal .shot { border: 2px dashed var(--muted); border-radius: 12px; padding: 1.2em 1em;
+      color: var(--muted); font-size: 0.5em; max-width: 70%; margin: 0.4em auto; }
+    .reveal .link { color: var(--brand); font-weight: 800; font-size: 1.1em; word-break: break-all; }
+    .reveal .dim { color: var(--muted); }
+    .reveal section { text-align: center; }
   </style>
 </head>
 <body>
   <div class="reveal">
     <div class="slides">
 
-      <!-- ── TITLE ─────────────────────────────────────────── -->
-      <section class="title-slide" data-background-gradient="linear-gradient(120deg, #0f2027, #203a43, #2c5364)">
-        <h1>Be the <span class="accent">Answer</span></h1>
-        <p class="subtitle">A hands-on workshop &middot; Michael Ashley</p>
-      </section>
-
-      <!-- ── WHAT THIS IS ──────────────────────────────────── -->
-      <section>
-        <h2>What we'll do today</h2>
-        <ul>
-          <li class="fragment">Frame the idea: <span class="accent">be the answer</span></li>
-          <li class="fragment">Work through live examples together</li>
-          <li class="fragment">You leave with prompts, skills &amp; handouts you can reuse</li>
-        </ul>
-        <p class="subtitle fragment">Everything is on GitHub — clone it, keep it.</p>
-      </section>
-
-      <!-- ── SECTION DIVIDER (example) ─────────────────────── -->
-      <section data-background-color="#234e52">
-        <h2>Part 1 — <span class="accent">The Idea</span></h2>
-      </section>
-
-      <!-- ── A CONTENT SLIDE + SPEAKER NOTES ───────────────── -->
-      <section>
-        <h3>A point worth making</h3>
-        <ul>
-          <li>Say it plainly</li>
-          <li>Show, don't tell</li>
-          <li>Give them something to take home</li>
-        </ul>
+      <!-- 1 · COLD OPEN -->
+      <section data-background-color="#05070d">
+        <p class="oneline">Someone is asking about you<br>right now.</p>
         <aside class="notes">
-          Speaker notes go here — press <strong>S</strong> during the talk to see them
-          on a second screen. The audience never sees this.
+          Thank you for having me. Somewhere right now, a person who needs exactly what your company sells
+          is looking for an answer. Not on Google — they're asking an AI: "What's the best company for
+          this?" And the AI gives ONE answer. A name. If it's not your name, you don't exist to that
+          customer — and you'll never know it happened. No click. No message. They quietly went to someone
+          else. For a founder, that's the hardest moment: when no one knows you exist yet. You're invisible
+          by default. So the whole job of marketing today, in one sentence: you have to BE THE ANSWER.
         </aside>
       </section>
 
-      <!-- ── A CODE / PROMPT SLIDE ─────────────────────────── -->
-      <section>
-        <h3>Showing a prompt</h3>
-        <pre><code data-trim data-noescape class="language-markdown">
-You are the answer, not the search result.
-
-Given a question, respond with the single
-best next action — then take it.
-        </code></pre>
+      <!-- 2 · TITLE -->
+      <section data-background-gradient="linear-gradient(120deg,#0f2027,#203a43,#2c5364)">
+        <p class="eyebrow">A 30-minute idea for founders</p>
+        <h1 class="huge">Be the <span class="accent">Answer</span></h1>
+        <aside class="notes">
+          That's the whole idea. For the next 30 minutes I'll show you what it really means to be the
+          answer — why most content fails, a simple map that fixes it, and how one person using AI can do
+          the work of a whole marketing team. Everything I show you, I'll GIVE you — free, link at the end.
+          I'm not selling anything today. I get nothing from this but the hope it helps you.
+        </aside>
       </section>
 
-      <!-- ── VERTICAL STACK (press down-arrow) ─────────────── -->
+      <!-- 3 · CREDIBILITY -->
       <section>
-        <section>
-          <h3>Nested slides</h3>
-          <p class="subtitle">Press <strong>↓</strong> to go deeper on a topic, <strong>→</strong> to move on.</p>
-        </section>
-        <section>
-          <h3>A sub-point</h3>
-          <p>Use these for optional depth you can skip if you're short on time.</p>
-        </section>
+        <p class="eyebrow">Why listen to me</p>
+        <h2>Mash</h2>
+        <p class="dim">FastPencil (built &amp; sold) · advisor in 3 exits · professor · founder of Radi8</p>
+        <aside class="notes">
+          Quickly, so you can decide whether to trust me. Everyone calls me Mash. ~15 years ago I built
+          FastPencil — the first online self-publishing platform, before the Kindle or iPad existed.
+          Barnes &amp; Noble licensed our tech; a public company bought us. That was my one big win — the
+          "okay, I made it" moment. Since then founders have trusted me as an advisor inside three more
+          exits: a private-equity sale, an acquisition by F5, and an IPO. I've taught 4,000+ students at
+          San José State. Today I run Radi8. Everything today comes from real scars, not theory.
+          [SHORTEN THIS IF RUNNING LONG.]
+        </aside>
       </section>
 
-      <!-- ── CLOSING ───────────────────────────────────────── -->
-      <section data-background-gradient="linear-gradient(120deg, #0f2027, #203a43, #2c5364)">
-        <h2>Take it with you</h2>
-        <p class="subtitle">Slides, handouts, prompts &amp; skills:</p>
-        <p><a href="https://github.com/mashley/be-the-answer" class="accent">github.com/mashley/be-the-answer</a></p>
+      <!-- 4 · WHAT MARKETING IS FOR -->
+      <section>
+        <p class="eyebrow">What marketing is really for</p>
+        <p class="oneline">Not pretty pictures.<br><strong>Real people, becoming customers.</strong></p>
+        <aside class="notes">
+          A founder I know raised money, hired an expensive agency, built a beautiful brand — logo,
+          website, colors — all based on what HE liked, not what customers needed. He spent a lot, felt he
+          had to keep it, but customers didn't connect with it. Nothing sold. The lesson — the most
+          expensive one in marketing: marketing is NOT pretty pictures or the launch-day celebration. Its
+          one job is to bring real people in and turn them into customers. Content with no strategy is just
+          noise. Buying ads before you understand your customer is spending money to be ignored faster.
+        </aside>
+      </section>
+
+      <!-- 5 · FOUNDATION -->
+      <section data-background-color="#234e52">
+        <p class="oneline">You can't be the answer<br>if you don't know the <strong>question</strong>.</p>
+        <p class="dim" style="margin-top:1em">Go slow — to go fast.</p>
+        <aside class="notes">
+          The first real rule. You can't be the answer if you don't know the question. Who is your
+          customer? What do they need? What keeps them awake at night? Know this BEFORE you make anything.
+          In English we say: go slow, to go fast. Time on the foundation first makes everything after it
+          faster and cheaper.
+        </aside>
+      </section>
+
+      <!-- 6 · THE JOURNEY -->
+      <section>
+        <p class="eyebrow">The map: your customer's journey</p>
+        <div class="stages">
+          <span class="stage accent">Awareness</span><span class="arrow">→</span>
+          <span class="stage accent">Acquisition</span><span class="arrow">→</span>
+          <span class="stage accent">Adoption</span><span class="arrow">→</span>
+          <span class="stage accent">Advocacy</span>
+        </div>
+        <aside class="notes">
+          Picture your customer on a journey of four stages. AWARENESS: they don't know you exist; their
+          question is "does a solution like this exist?" — your content says here I am, here's the problem
+          I solve. ACQUISITION: they're comparing options; question is "why choose you?" Don't fear it —
+          it's like math, no emotion, yes or no, don't take it personally. I'd rather they read my content
+          and say "not for me" than say yes and be wrong. ADOPTION: they paid — are they actually USING
+          it? The stage everyone forgets. (You've all signed up for something, never used it, and hit
+          "cancel" a year later.) Your content answers "how do I get the most out of this?" ADVOCACY: they
+          love it and want to tell people — help them. After a great result I ask a client for a 5-minute
+          video: what was hard, what we did, how it is now. That becomes content that brings the next
+          customer.
+        </aside>
+      </section>
+
+      <!-- 7 · THE STRATEGY IN ONE LINE -->
+      <section data-background-color="#1a1a2e">
+        <p class="oneline">Different stage.<br>Different question.<br><strong>Different answer.</strong></p>
+        <aside class="notes">
+          Here's why it matters: most people make ONE kind of content and wonder why it fails. But each
+          stage is a different question — and your content is the answer. Four questions, four answers.
+          Match your content to the stage your customer is in. That's the entire strategy. That's what it
+          means to be the answer.
+        </aside>
+      </section>
+
+      <!-- 8 · AEO -->
+      <section>
+        <p class="eyebrow">Being found has changed</p>
+        <p class="oneline">Be the answer <strong>the AI gives</strong>.</p>
+        <div class="shot">▧ SCREENSHOT: an AI chat answering "who's the best…" — recommending competitors, not you. (Drop a real screenshot here.)</div>
+        <aside class="notes">
+          Back to stage one — being found. For 25 years that meant Google's list of links (SEO). That
+          world is changing fast: your customer asks an AI and gets ONE answer. The new game has an ugly
+          name — AEO, Answer Engine Optimization. Forget the name. It means: be the answer the AI gives.
+          Check it yourself, free: open ChatGPT, ask the question your customer would ask — "who's the best
+          company for this problem?" See if your name appears, and who appears instead. Then ask the AI
+          "why did you recommend them?" It'll tell you — usually because trusted places point to them.
+        </aside>
+      </section>
+
+      <!-- 9 · AI VISIBILITY -->
+      <section>
+        <p class="oneline">Does AI even know<br><strong>you exist?</strong></p>
+        <div class="shot">▧ SCREENSHOT: AI Visibility — your rank vs. competitors + recommendations. (Drop a real screenshot here.)</div>
+        <aside class="notes">
+          This screen is from a tool I built — showing it ONLY to teach the idea. It checks a scary
+          question: does AI even know you exist? When I first ran it on my own company, the answer was no —
+          it knew my competitors, not me. Uncomfortable, but useful: now I know what to fix. And the fix is
+          simple to understand, even if it's work: the more trusted places point to you, the more the AI
+          trusts you. Get written about. Get listed. Get reviews. Answer real questions in public, clearly.
+          Be genuinely, consistently useful. That's how you become the answer.
+        </aside>
+      </section>
+
+      <!-- 10 · AI = A WHOLE TEAM -->
+      <section>
+        <p class="eyebrow">How one person does all of this</p>
+        <p class="oneline">AI without context<br>makes <strong>junk, faster</strong>.</p>
+        <aside class="notes">
+          How does a solo founder do all this? AI. I've built software for 30 years — I used to manage
+          hundreds of engineers across many time zones; things took months. Today I have ZERO engineers.
+          AI works next to me, doing exactly what I ask, immediately. A different world. BUT — the most
+          important sentence here: AI without context makes junk, faster. Ask a blank AI to "write a post
+          about my company" and it invents things — calls you a "world-renowned expert" you never claimed.
+          Give it context — who you are, your customer, your promise, your voice — and it writes something
+          true that sounds like you. Three ways to use AI: DO (make content), THINK (plan, test ideas),
+          PLAN (schedule and run it).
+        </aside>
+      </section>
+
+      <!-- 11 · THE ONE EQUATION -->
+      <section data-background-color="#234e52">
+        <p class="oneline">Use AI to lower the cost<br>to <strong>get</strong> a customer —<br>and raise the <strong>value</strong> of each one.</p>
+        <aside class="notes">
+          If you remember only one way to use AI, remember this question: how can I use AI to lower what it
+          costs me to get a customer, and raise the value of each customer? Ask it every day and you'll
+          never waste AI on something pointless. One honest note: I built a tool called Radi8 that stores
+          your context so the AI always sounds like you. But you don't need it — you can do everything I
+          described with free tools like ChatGPT or Claude, and I'll show you exactly how, in the link.
+        </aside>
+      </section>
+
+      <!-- 12 · CLOSE + GIFT -->
+      <section data-background-gradient="linear-gradient(120deg,#0f2027,#203a43,#2c5364)">
+        <h1 class="huge">Be the <span class="accent">Answer</span></h1>
+        <p style="margin-top:.8em" class="dim">Everything today — free:</p>
+        <p class="link">github.com/mashley/be-the-answer</p>
+        <aside class="notes">
+          In one breath: the way people find you changed — so be the answer. Marketing's real job is real
+          people becoming customers, not pretty pictures. Your customer moves through four stages, each a
+          different question you answer. To be found now, be the answer the AI gives. And AI lets one
+          person do the work of a team — but only if you give it your context first.
+
+          If you forget everything else: every piece of content should be the answer to a real question
+          your customer is asking, at the stage they're in. If it's not — don't make it.
+
+          Now the gift. Everything I showed you — slides, steps, prompts, tools, links — is free, right
+          here. Take it, copy it, give it to a friend. Try Radi8 free if you want, but everything I taught
+          works without it. I didn't come to sell you anything. I came to be YOUR answer today. You're
+          building something the world needs — so go build it, and go be the answer. Thank you.
+          [ADD A QR CODE TO THIS SLIDE IF YOU HAVE TIME. LEAVE THIS SLIDE UP DURING ANY Q&A.]
+        </aside>
       </section>
 
     </div>
   </div>
 
-  <div class="footer">Be the Answer &middot; press <strong>F</strong> for fullscreen</div>
-
-  <!-- reveal.js core + plugins (CDN) -->
   <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/highlight.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/markdown/markdown.js"></script>
   <script>
     Reveal.initialize({
-      hash: true,          // deep-links to the current slide (good for sharing)
-      slideNumber: 'c/t',  // "current / total" in the corner
-      transition: 'slide',
-      plugins: [ RevealNotes, RevealHighlight, RevealMarkdown ]
+      hash: true,
+      slideNumber: 'c/t',
+      transition: 'fade',
+      controls: true,
+      plugins: [ RevealNotes ]
     });
   </script>
 </body>
