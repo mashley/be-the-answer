@@ -43,6 +43,9 @@ Open [claude.ai](https://claude.ai), and run these [copy-paste prompts](../promp
 Want Claude to remember your brand every time, without pasting? Load a **[Skill](../skills/)**
 (`be-the-answer` and `brand-voice-builder`) — the [skills page](../skills/) shows you how in 2 minutes.
 
+**Prefer pen and paper?** Do the three [Foundation Worksheets](worksheets/) first — Understand Your
+Customers → Understand Yourself → Your Value Proposition. They give every prompt above the context it needs.
+
 ---
 
 ## 3. Want it done for you? Try Radi8 (free)
