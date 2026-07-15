@@ -24,15 +24,6 @@ The presentation lives in [`slides/`](slides/) and is built with [reveal.js](htt
 | [`resources.md`](resources.md) | Curated links |
 | `local/` | **Not in the repo** — personal, machine-only notes (gitignored) |
 
-## 🌐 Enable the live slides (one-time setup)
-
-1. Push this repo to GitHub.
-2. Repo **Settings → Pages → Build and deployment → Source: Deploy from a branch**.
-3. Branch: **main**, folder: **/ (root)**. Save.
-4. After a minute, your slides are live at `https://<your-username>.github.io/<repo-name>/`.
-
-The root of the site redirects to the deck automatically.
-
 ## 👤 About Michael
 
 <img src="assets/mash-headshot.jpg" alt="Michael &quot;Mash&quot; Ashley" width="140" align="left" style="border-radius:50%; margin-right:16px">
