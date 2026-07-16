@@ -40,6 +40,17 @@
     body.is-fs .reveal .controls { display: none !important; }
     .reveal .link { color: var(--brand); font-weight: 800; font-size: 1.1em; word-break: break-all; }
     .reveal .dim { color: var(--muted); }
+    /* Cited stat line — one real number per slide, source attached */
+    .reveal .stat { font-size: 0.42em; color: var(--muted); line-height: 1.55; margin-top: 1.2em; max-width: 80%;
+      margin-left: auto; margin-right: auto; }
+    .reveal .stat b { color: var(--ink); font-weight: 800; }
+    .reveal .stat .src { opacity: 0.65; }
+    /* Journey stage slides */
+    .reveal .qline { font-size: 1.3em; font-weight: 300; line-height: 1.25; margin: 0.35em 0; }
+    .reveal .job { color: var(--muted); font-size: 0.6em; margin-top: 0.2em; }
+    .reveal .captured { display: inline-block; margin-top: 1em; padding: 0.4em 0.95em;
+      border: 1px solid var(--brand); border-radius: 999px; color: var(--brand); font-weight: 700;
+      font-size: 0.55em; letter-spacing: 0.02em; }
     .reveal section { text-align: center; }
   </style>
 </head>
@@ -96,6 +107,8 @@
       <section>
         <p class="eyebrow">What marketing is really for</p>
         <p class="oneline">Not pretty pictures.<br><strong>Real people, becoming customers.</strong></p>
+        <p class="stat"><b>~43%</b> of startups fail from poor product–market fit — the #1 root cause,
+          ahead of anything tactical. <span class="src">CB Insights · startup post-mortems</span></p>
         <aside class="notes">
           A founder I know raised money, hired an expensive agency, built a beautiful brand — logo,
           website, colors — all based on what HE liked, not what customers needed. He spent a lot, felt he
@@ -118,7 +131,7 @@
         </aside>
       </section>
 
-      <!-- 6 · THE JOURNEY -->
+      <!-- 6 · THE JOURNEY (overview) -->
       <section>
         <p class="eyebrow">The map: your customer's journey</p>
         <div class="stages">
@@ -127,17 +140,74 @@
           <span class="stage accent">Adoption</span><span class="arrow">→</span>
           <span class="stage accent">Advocacy</span>
         </div>
+        <p class="dim" style="margin-top:1em">Four stages. Each one a different question —<br>and a different place you capture value.</p>
         <aside class="notes">
-          Picture your customer on a journey of four stages. AWARENESS: they don't know you exist; their
-          question is "does a solution like this exist?" — your content says here I am, here's the problem
-          I solve. ACQUISITION: they're comparing options; question is "why choose you?" Don't fear it —
-          it's like math, no emotion, yes or no, don't take it personally. I'd rather they read my content
-          and say "not for me" than say yes and be wrong. ADOPTION: they paid — are they actually USING
-          it? The stage everyone forgets. (You've all signed up for something, never used it, and hit
-          "cancel" a year later.) Your content answers "how do I get the most out of this?" ADVOCACY: they
-          love it and want to tell people — help them. After a great result I ask a client for a 5-minute
-          video: what was hard, what we did, how it is now. That becomes content that brings the next
-          customer.
+          Now the most useful idea in the talk. Picture your customer on a journey of four stages. I'll walk
+          each one — and at each stage, notice WHERE value gets captured, because that's what you're really
+          building toward. Keep it simple: four stages, four questions, four answers.
+        </aside>
+      </section>
+
+      <!-- 6a · AWARENESS -->
+      <section>
+        <p class="eyebrow">The customer's journey · stage 1 of 4</p>
+        <h2 class="accent">Awareness</h2>
+        <p class="qline">"Does a solution like this<br>even exist?"</p>
+        <p class="job">Your content's job: be seen — name the problem you solve.</p>
+        <span class="captured">Value captured → you exist to them</span>
+        <aside class="notes">
+          AWARENESS. Right now your customer doesn't know you exist. The first job is simply to be seen.
+          Their question: "does a solution like this even exist?" Your content answers it — here I am,
+          here's the problem I solve. The value you capture: you go from invisible to existing. Before this
+          moment you were nothing to them. After it, you're an option.
+        </aside>
+      </section>
+
+      <!-- 6b · ACQUISITION -->
+      <section>
+        <p class="eyebrow">The customer's journey · stage 2 of 4</p>
+        <h2 class="accent">Acquisition</h2>
+        <p class="qline">"Why should I<br>choose you?"</p>
+        <p class="job">Your content's job: help them decide — honestly.</p>
+        <span class="captured">Value captured → they choose you</span>
+        <aside class="notes">
+          ACQUISITION. Now they know you exist, but they're comparing options. Their question: "why should I
+          choose you?" Many founders fear this — they think it means selling, and "I'm bad at selling."
+          Reframe it: acquisition is like math. No emotion. Yes or no. Don't take it personally. Your job is
+          to give them what they need to decide — and honestly, I'd rather they read my content and say "not
+          for me" than say yes and be the wrong fit. Value captured: a customer — and the right one.
+        </aside>
+      </section>
+
+      <!-- 6c · ADOPTION -->
+      <section>
+        <p class="eyebrow">The customer's journey · stage 3 of 4</p>
+        <h2 class="accent">Adoption</h2>
+        <p class="qline">"How do I get the most<br>out of this?"</p>
+        <p class="job">Your content's job: help them actually succeed.</p>
+        <span class="captured">Value captured → they stay</span>
+        <aside class="notes">
+          ADOPTION — the stage everyone forgets. They paid. But are they actually USING it? You've all done
+          this: you sign up for something, never use it, and a year later an email says "renew?" and you
+          think cancel, cancel, cancel. That's a failure of adoption. Your content answers "how do I get the
+          most out of this?" Value captured: they stay — the renewal, the habit, the retained customer.
+          This is where profit actually lives.
+        </aside>
+      </section>
+
+      <!-- 6d · ADVOCACY -->
+      <section>
+        <p class="eyebrow">The customer's journey · stage 4 of 4</p>
+        <h2 class="accent">Advocacy</h2>
+        <p class="qline">"How do I<br>tell others?"</p>
+        <p class="job">Your content's job: make sharing easy.</p>
+        <span class="captured">Value captured → they bring the next customer</span>
+        <aside class="notes">
+          ADVOCACY. Now they love it — and a happy customer wants to tell people. When they do, they become
+          a salesforce you didn't pay for. But they need your help. My favorite move: after a great result,
+          I ask the client for a short five-minute video — what was hard before, what we did, how it is now.
+          That video becomes content that brings the next customer. Value captured: your customer starts
+          acquiring your next customer for you. That's the flywheel.
         </aside>
       </section>
 
@@ -156,7 +226,9 @@
       <section>
         <p class="eyebrow">Being found has changed</p>
         <p class="oneline">Be the answer <strong>the AI gives</strong>.</p>
-        <img class="shot-img" src="../assets/ai-recommend.png" alt="We asked AI to recommend us. It didn't.">
+        <img class="shot-img" style="max-height:50vh" src="../assets/ai-recommend.png" alt="We asked AI to recommend us. It didn't.">
+        <p class="stat"><b>Gartner projects a 25% drop</b> in traditional search volume by 2026 as people
+          shift to AI answers. <span class="src">Gartner, 2024</span></p>
         <aside class="notes">
           Back to stage one — being found. For 25 years that meant Google's list of links (SEO). That
           world is changing fast: your customer asks an AI and gets ONE answer. The new game has an ugly
@@ -206,6 +278,21 @@
           never waste AI on something pointless. One honest note: I built a tool called Radi8 that stores
           your context so the AI always sounds like you. But you don't need it — you can do everything I
           described with free tools like ChatGPT or Claude, and I'll show you exactly how, in the link.
+        </aside>
+      </section>
+
+      <!-- 11b · ONE THING TONIGHT -->
+      <section data-background-color="#05070d">
+        <p class="eyebrow">One thing to do tonight</p>
+        <p class="oneline">Open ChatGPT. Ask the question<br>your customer would ask.</p>
+        <p class="dim" style="margin-top:.7em">"Who's the best company for <em>[their problem]</em>?"</p>
+        <span class="captured" style="margin-top:1.1em">Not the answer? The repo shows you the fix →</span>
+        <aside class="notes">
+          Before the gift — here's the one thing to do tonight, five minutes. Open ChatGPT. Ask the exact
+          question your customer would ask: "who's the best company for this problem?" See if your name
+          comes up. See who comes up instead. If you're not the answer — good, now you know, and everything
+          I'm about to give you shows you how to fix it. That's the concrete first step: find out where you
+          stand tonight.
         </aside>
       </section>
 
